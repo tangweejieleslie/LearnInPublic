@@ -1,0 +1,13 @@
+This is day 1 of Learn In Public Habit.
+
+For now, I think it make sense to learn more about Javascript, since I'm thinking of focusing on Front End development. 
+
+First steps:
+
+1. Read JavaScript: The Good Parts
+- 100 pages over 10 days = 10 pages a day
+
+2. Create a short summary for each day
+
+3. Post on Twitter and DEV.to
+
