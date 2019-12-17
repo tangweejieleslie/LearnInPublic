@@ -1,0 +1,32 @@
+Page 1 to 10
+=========================================
+What are the Good Ideas Behind Javascript
+=========================================
+1. Expressive Objects Literal Notation:
+- objects can be easily created; simply by listing their components. 
+- this inspires the creation of JSON
+
+2. Prototypal Inheirtance: 
+- class free object system where objects inherit properties directly from other objects
+
+3. Loose Typing
+
+4. Functions
+
+=========================================
+Grammar / Syntax
+=========================================
+Most of the information describes feels intuitive. Rather than listing down everything, it makes more sense to set up some sort of syntax check to prompt you as part of the coding process.
+
+I'll just highlight some points which stood out to me.
+
+1. Strings containing exactly the same characters in the same order are considered the SAME ("===")
+2. Strings have a length property; i.e. "seven".length returns 5
+3. Strings have methods; e.g. "string".toUpperCase();
+
+
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                   
