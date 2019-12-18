@@ -1,0 +1,56 @@
+Page 11 to 20
+=========================================
+More on Syntax
+=========================================
+# What are statements
+* executable "instructions"
+
+# What are some things to note about statements in JS
+* block is a set of statements wrapped in curly braces
+* blocks in JS does not create a new scope
+* var statement defines function's private variables; when used inside a function
+* JS throw all statements together in a common global namespace
+
+=========================================
+# Types of Statements
+=========================================
+* distruptive: e.g. break, return, throw
+* if
+* switch
+* case
+* while
+* for
+* do
+* try
+* throw
+* return
+* break
+* expression
+
+# Expressions
+* literal value: string or numbers
+* variable
+* build-in value: true, false, null, undefined, NaN, Infinity
+
+## Prefix Operator
+* typeof
+* +
+* -
+* !
+
+## Postfix
+* infix operator and another expression
+* ternary operator followed by another expression; then by :; and then by another expression
+** 3 operands; if first is truthy; produces value of second operand. if first is falsy; produce value of the third operand (i.e. if then else)
+* invocation
+* refinement
+
+# Literals
+* notation for specifying new objects
+** names of properties can be specified as names or strings
+** names are treated as literal names rather than variable names; names of properties of objects must be known at compile time
+** values of properties are expressions
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                   
