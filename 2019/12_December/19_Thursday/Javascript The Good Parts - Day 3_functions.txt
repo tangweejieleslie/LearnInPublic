@@ -1,0 +1,48 @@
+Page 21 to 30
+=========================================
+Functions
+=========================================
+
+* set of statements
+* fundamental modular unit of JS; makes it easy for
+  * code reuse; information hiding; composition
+* functions are objects in JS
+
+* 4 parts in function literal
+** reserved word: "function"
+** function's name
+** set of parameters
+** set of statements
+
+Invocation
+* invoking a function suspect execution of CURRENT function
+* control and parameters are passed to new function; togteher with declared parameters
+** Two additional parametrs in every function:
+*** this
+*** arguments
+
+4 Patterns of Invocation: the main difference is in how "this" is initialized
+
+1. Method Invocation Pattern 
+* Method: a function stored as property of an object
+* "this" is bounded to that object
+* "this" can be used to access object; to retrieve or modify values in object properties
+
+2. Function Invocation
+* when function is NOT property of an object
+* "this" is bounded to the global object
+* hence, no access to inner function's properties
+* workaround: define a variable in method and assign it the value of "this"
+
+3. Constructor Invocation Pattern
+* JS is a prototypal inheritance language; i.e. object can inherit properties from other object
+* JS is class-free
+* if function invoked with prefix "new"; new object will be created with hidden link to value of function's prototype member
+* "this" bound to new object
+* convention of constructors function: capitalized name; kept in variables
+* e.g. var myQuo = new Quo("");
+
+4. Apply Invocation 
+* JS is functional object-oriented language; hence functions have methods
+* apply method constructs array of argument for use to invoke function
+* let us choose value of "this"
