@@ -1,0 +1,52 @@
+Page 21 to 30
+=========================================
+Objects
+=========================================
+
+Objects in JS are
+- mutable keyed collections
+- arrays, functions, regular expressions and objects, are all objects
+- container of properties; where a property has a name and value
+- property name can be any string
+- objects are class-free; i.e. no constraints on names or values of new properties 
+- objects can contain other objects
+- prototype linkage feature: one object to inherit properties of another; hence reduce object initialization time and memory consumption
+
+
+Object Literal: i.e. creating new object values
+
+
+
+2 ways of Retrieval
+* . notation
+* ["property-name"]
+                                                                                                                                                                                                                                                                                          Update: simply the same way you retrieve, but with an assignment of new value
+
+Reference: objects are passed around by reference, never copied.
+
+Prototype:
+* every object is linked to a prototype object; from which it can inherit properties
+* prototype link used ONLY in retrieval; i.e. when retrieving a property that is undefined, JS will search for that property up the prototype chain; known as delegation
+
+Reflection
+* typeof operator; helpful to determine type of a property
+* e.g. typeof object.property 
+* but remember that delegation would take place; even though it might not be desirable
+* two approaches to target the exact object that we are interested in 
+** "Search and Reject": have program find and reject function values and/or properties in prototype chain
+** "Use hasOwnProperty method": returns true if object has a particular property; does not look into prototype chain
+
+Enumeration
+* for in statement to enumerate over all property names in object
+* make use of hasOwnProperty as a filter to exclude prototype chain
+* use typeof to exclude functions
+* for in does not guarantee order of names, make an array to enforce sequence if needed
+
+Delete
+* remove property from object
+
+
+Global Abatement
+* minimize use of global variables by creating a single global variable for the application; which serve as a container
+* this reduces global footprint to a single name; hence reduce odds of bad interaction
+* make code easier to read
