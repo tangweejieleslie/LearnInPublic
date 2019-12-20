@@ -1,0 +1,46 @@
+Page 31 to 40
+=========================================
+Functions
+=========================================
+
+Arguments: 
+
+* there's a bonus parameter known as "argument" that is an array-like object available to all functions
+** this allows for a function that can take in "unlimited" parameters
+
+Return
+
+* return statement can be used for function to return early
+** if function was invoked with new prefix; return will return an object; if the return statement does not return an object, it will return "this" instead
+
+Exceptions
+
+* use throw, try and catch to handle exceptions
+* throw block goes into the function
+* try catch goes into the execution; where the function invocation goes into the try block and catch handles the exception; usually by throwing some sort of exception message to the user or developer
+
+
+Augmenting Types
+
+* basic types of the language can be augmented
+* e.g. if we add a method to Object.prototype; that method will be available to all objects
+
+Recursion
+* useful for manipulating tree structures; such as browser's DOM
+* functions that recurse very deeply could fail by exhuasting the return stack
+
+Scope
+* JS does not have block scope; it has function scope
+* hence it's good practice to declare all variables used in a function at the TOP of the function body
+
+Closure
+* 
+
+
+Callbacks
+* use callbacks to write non-blocking asynchronous functions
+* need some attempts to test this out
+
+
+
+
