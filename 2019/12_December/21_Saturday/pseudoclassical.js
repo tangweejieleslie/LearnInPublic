@@ -8,6 +8,24 @@ Function.prototype.inherits = function (Parent) {
     return this;
 };
 
+var Pokemon = function (name) {
+    this.name = name;
+    this.resistance = [];
+    this.weakness = [];
+    this.type = "";
+};
+
+var FireType = function () {
+    this.type = "Fire";
+    this.resistance = ["Fire", "Grass", "Ice", "Bug", "Steel", "Fairy"];
+    this.weakness = ["Water", "Ground", "Rock"];
+}.inherits(Pokemon);
+
+
+var charmander = new FireType();
+console.log(charmander.resistance);
+
+
 var Mammal = function (name) {
     this.name = name;
     this.species = "Mammal";
