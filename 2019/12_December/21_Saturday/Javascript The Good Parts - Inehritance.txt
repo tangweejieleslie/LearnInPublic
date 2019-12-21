@@ -1,0 +1,56 @@
+Page 46 to 57
+
+- Inheritance, makes it easy to reuse code
+- in JS; objects inherits directly from other objects
+- in classical language; objects inherit from another CLASS; objects are instances of classes
+
+
+Inheritance Patterns
+
+- basically different ways to implement inheritance in JS
+
+Method 1
+Pseudo-Classical
+- this mimics classical approaches to implement inheritance; but to me, the implementation feels confusing and possible prone to error
+
+- the idea is straightforward though
+
+Method 2
+Object Specifiers
+
+this part is about how we write the constructors
+
+instead of something like 
+var myObject = maker(f,l,m,c,s);
+
+we pass in an object which contains the required parameters as follow
+
+var myObject = maker({
+first: f,
+last: l,
+middle: m,
+state: s,
+city: c
+});
+
+The first method requires each invocation of the constructor to pass in the parameters in a specific order; which could be a cumbersome process. i.e. imagine having to refer to the function each time you invoke the constructor. 
+
+The second method is more flexible and less error prone. i.e. explictly declare the parameters through the properties in the object.
+
+Method 3
+Prototypal
+
+Idea: new object can inherit properties of an old object
+
+Step 1: create a base object
+Step 2: 
+
+
+
+Method 4: Functional
+
+Objective: implement privacy; i.e. private methods and variables
+
+Method 5: Parts
+
+- compose objects out of a set of parts
