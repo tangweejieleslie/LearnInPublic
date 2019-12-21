@@ -1,0 +1,1 @@
+run `node file.js` in cmd 

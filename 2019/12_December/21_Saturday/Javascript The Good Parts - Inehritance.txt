@@ -54,3 +54,41 @@ Objective: implement privacy; i.e. private methods and variables
 Method 5: Parts
 
 - compose objects out of a set of parts
+
+
+
+
+
+=======================
+
+Firstly; why do we use inheritance?
+
+https://www.quora.com/Why-do-we-use-Inheritance-in-programming
+
+The book offers the perspective of using inheritance as a form of code reuse. And give us 5 ways to implement inheritance in JavaScript.
+
+In JS, objects inherits directly from other objects, rather than from another class. It seems important to note this, but I'm not sure why at this point.
+
+Method 1: Pseudoclassical
+
+The idea is to make it such that inheritance in JS behave somewhat similar to classical languages. Personally, it feels somewhat forced to me. 
+
+points to note
+- make use of constructor invocation pattern; i.e. new prefix
+- which changes how function is executed
+- if new operator were a method instead of an operator; implementation as shown
+
+
+Idea: 
+1. define a constructor and augment its prototype
+2. make an instance
+3. Make another pseudoclass that inherits the object; replace the pseudoclass prototype with a new instance of base class
+
+- define an inherits method to make code more readable
+- 
+
+
+
+
+
+
