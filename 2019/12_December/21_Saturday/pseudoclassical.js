@@ -1,26 +1,17 @@
-// 
-// Function.method('inherits', function (Parent) {
-//     this.prototype = new Parent();
-//     return this;
-// });
+// Additional References
 
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
+// https://davidshariff.com/blog/javascript-inheritance-patterns/
 
 Function.prototype.inherits = function (Parent) {
     this.prototype = new Parent();
     return this;
 };
 
-
-// function inherits(Parent){
-//     this.prototype = new Parent();
-//     return this;
-// }
-
 var Mammal = function (name) {
     this.name = name;
     this.species = "Mammal";
 };
-
 // Add Method to "Class"
 Mammal.prototype.get_name = function () {
     console.log(this.name);
@@ -31,7 +22,6 @@ Mammal.prototype.get_species = function () {
     console.log(this.species);
     return this.species;
 }
-
 
 // Create Instance
 var Cat = function (name) {
@@ -51,9 +41,13 @@ var Dog = function (name) {
     this.name = name;
     this.saying = "woof";
     this.species = "Dog";
+    this.bark = function () {
+        console.log("bark");
+    };
 }.inherits(Mammal);
 
 var myDog = new Dog("Growlithe");
 
 myDog.get_species();
+myDog.bark(2);
 myCat.get_species();
