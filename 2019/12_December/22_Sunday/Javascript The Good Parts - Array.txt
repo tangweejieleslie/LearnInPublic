@@ -1,0 +1,49 @@
+Page 58 to 64
+
+Arrays
+
+arrays literal
+- first value get property name '0', second gets '1' etc....
+
+
+var empty = [];
+var numbers = ['zero', 'one', 'two', 'three'];
+
+empty[1] // returns undefined
+numbers[1] // returns 'one'
+
+- numbers inherits from Array.prototype
+- have 'length' property
+- have access to some useful methods
+- JS arrays can have a mixture of values
+
+Length Property
+- not upper bound
+- no array bounds error; e.g. number[10] will just return undefined instead of error
+- we can explictly assign length value; it will remove all values after that assign length. but will not allocated more space if set larger than current length
+- use push to add new value to end of array
+- alternatively use array[array.length] to assign new value to the end
+
+Delete
+- remove element from array, that position becomes undefined, the rest of the elements stays in place
+- splice method; splice(position, number of items)
+- will cause every property after the deleted property to be removed and reinserted with a new key
+- operation will take some time for large arrays
+
+
+Enumeration
+- JS arrays are really objects
+- for in can be used to iterate all properties in array
+- but won't be produced in numerical order
+- be wary of unexpected properties from the prototype chain
+- simpler method is just use for loop
+
+Confusion
+
+Methods
+
+Dimensions
+
+
+
+

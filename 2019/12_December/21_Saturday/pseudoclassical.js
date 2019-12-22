@@ -15,15 +15,18 @@ var Pokemon = function (name) {
     this.type = "";
 };
 
-var FireType = function () {
+var FireType = function (name) {
+    this.name = name;
     this.type = "Fire";
     this.resistance = ["Fire", "Grass", "Ice", "Bug", "Steel", "Fairy"];
     this.weakness = ["Water", "Ground", "Rock"];
 }.inherits(Pokemon);
 
 
-var charmander = new FireType();
+var charmander = new FireType("Charmander");
 console.log(charmander.resistance);
+console.log(charmander.name);
+
 
 
 var Mammal = function (name) {
