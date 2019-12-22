@@ -39,10 +39,28 @@ Enumeration
 - simpler method is just use for loop
 
 Confusion
+- common error: use object when array is required, vice versa
+- rule of thumb: if property names are small sequential integers, use array. else, use objects
+
+- typeof alone does not differentiate array from objects
+- define our own is_array function
+
+var is_array = function (value) {
+
+}
 
 Methods
+- set of methods for acting on array; stored in Array.prototype
+- we can extend the Array.prototype by adding new methods that can be used by all arrays
+- we can also extend individual array objects; i.e. adding new methods for specific arrays 
+
+
 
 Dimensions
+- JS arrays are usually not initialized; i.e. a new array created with [] would be empty
+- if we want to create an array with values initialized to 0; we need to define our own method
+- we can create arrays of arrays to make 2-d array
+- this can be done by a simple for loop
 
 
 
