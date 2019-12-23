@@ -1,0 +1,26 @@
+https://youtu.be/7DG3kCDx53c?t=156
+
+Regex: Search pattern to find something in a given string
+
+- sequence of character; known as "literal character"; i.e. literally what you explictly define
+
+
+
+- "meta" character: indication of some generalized pattern; i.e. think pattern in wild card
+
+- reminds me of Access database "template" for data input
+
+
+How do we think in terms of REGEX?
+
+
+- first thought: useful for parsing heavy application: e.g. apps that convert CSV to JSON or something?
+
+1. consider the pattern that we are trying to extract
+
+
+--------------
+
+a single string that serve as example for all the different regex pattern
+
+- to reduce switch and processing resource (i.e. make it easier for the reader)
