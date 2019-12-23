@@ -29,6 +29,19 @@ Array.prototype.reduce = function (f, value) {
     return value;
 };
 
+Array.dim = function (dimension, initial) {
+    var i;
+    var array = [];
+    for (i = 0; i < dimension; i += 1) {
+        array[i] = initial;
+    }
+    return array;
+};
+
+var newArray = Array.dim(10,110);
+
+
+console.log("New Array: ",newArray);
 
 var sum = data.reduce(add, 0);
 console.log(sum);
