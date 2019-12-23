@@ -24,3 +24,9 @@ How do we think in terms of REGEX?
 a single string that serve as example for all the different regex pattern
 
 - to reduce switch and processing resource (i.e. make it easier for the reader)
+
+
+
+https://www.regular-expressions.info/anchors.html
+
+Anchors: ^ and $; position before and after the string match

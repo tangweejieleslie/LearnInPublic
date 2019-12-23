@@ -2,6 +2,7 @@
 
 var data =  [4, 8, 15, 16, 23, 42];
 
+console.log("Is Data an Array: ", Array.isArray(data));
 
 var add = function (a, b) {
     return a + b;

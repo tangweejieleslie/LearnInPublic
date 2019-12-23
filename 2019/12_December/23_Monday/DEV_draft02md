@@ -1,0 +1,149 @@
+---
+title: Making Sense of Regex in JavaScript
+published: false
+description: 
+tags: javascript, regex, beginner
+---
+
+**References:**
+1. JavaScript: The Good Parts by Douglas Crockford, 2008. Page 65-77.
+
+<hr>
+
+<center>
+ **NOTICE**  
+This article serves as my notes upon reading "JavaScript: The Good Parts". While I do refer to other materials as shown in the above references, the information in this article might not be 100% accurate/updated. 
+
+At this point, I identify myself as a beginner who knows next to nothing about regular expression. What I write is my form of learning the concept and I hope that fellow readers who are also new to the concept would benefit from this article. 
+
+<hr>
+</center>
+
+
+# 1. What is Regular Expression (regex)?
+
+I'm still not too sure what "regular" refers to, but I think I have an understanding of how the expression fits in place. 
+
+## 1.1. Concept of Expression
+
+Recall in Mathematics, expressions are simply a combination of **components** such as numbers, operators, variables, parentheses, etc. 
+
+This means to learn about regex, we need to first know what are the equivalent **components** available. 
+
+## 1.2. Purpose of regex
+
+Apart from the components, we would also need to know what the purpose of regex is. In math, expression helps us express known and unknown numerical components in order to identify the value of the unknowns. In regex, expression helps us **express a string pattern** that we are trying to match against another string source. 
+
+For example, let's say I want to find all phone numbers from a webpage, and I know phone numbers follow a certain format. I would express the phone number format through regex and use it to search through the webpage. 
+
+In this case, we have two variables (expressed in psuedo-code):
+
+```javascript
+var phone_number_pattern; //some phone number format expressed in regex format
+var entire_webpage_stored_as_a_string;
+```
+
+# 2. Syntax
+
+Recall that regex is trying to express a string pattern that we are trying to find in a larger set of string. 
+
+The first thing we need to know is the syntax of regex. 
+
+The following is an animated railroad diagram to illustrate the syntax components.
+
+![Alt Text](https://thepracticaldev.s3.amazonaws.com/i/fjvrnnp4mcf2hw9z0yrv.gif)
+
+_Source Image: JavaScript: The Good Parts by Douglas Crockford, 2008. Page 70._
+
+
+We can see that the "regexp choice" and the "g,i,m" flags are the main components in defining the string pattern.
+
+# 3. Regexp Flags
+
+| Flag | Meaning | 
+| ---| --- |
+|g | Global. match multiple times. |
+|i | Insensitive. ignore character case. |
+|m | Multiline. ^ and $ can match line-ending character |
+
+> ^ and $ are anchors used to indicate the start and end of the string.
+
+# 4. regexp Choice
+
+A regexp choice is made up of one or more *regexp sequences*. If there are multiple sequences, we separate them using the vertical bar character:  `|`.
+
+## 4.1 regexp Sequences
+
+A sequence contains one or more *regexp factors*, which can be followed by an optional quantifier which determines how many times the factor is *ALLOWED* to appear. If there's no quantifier, then the factor will be matched once. 
+
+## 4.2 regexp Factors
+
+Factors can be the following:
+* character
+* groups
+* character class
+* escape sequence
+
+### 4.2.1 Character
+
+All characters are treated literally EXCEPT for the following control and special characters:
+
+`\ / [ ] ( ) { } ? + * | . ^ $`
+
+If we want to search for the above characters in the source string, we need to prefix them with `\` to make it literal. For example, `\[`. 
+
+| Special Characters | Meaning |
+|-|-|
+| \ | escape prefix |
+| / | marks the start and end of regex |
+| [ ] | marks the start and end of regex class|
+| ( ) | marks the start and end of regex groupings|
+| * | Quantifier. match preceding character *0* or more times|
+| + | Quantifier. match preceding character *1* or more times|
+| ? | Quantifier. makes preceding character 0 or 1 time |
+
+
+ 
+### 4.2.2 Group
+
+There are 4 kinds of groups
+
+|Group Type| Description| Syntax|
+|-|-|----|
+|Capturing|regexp choice wrapped in parentheses. Characters that match the group will be captured. Every capturing group will be given a number, first `(` is group 1  | (regexp_choice), ((choice_2)choice_1)|
+|Noncapturing|Simply matches. It does not capture the matched text. Better performance than capturing. Does not interfere with the numbering of capturing groups | (?: regexp_choice)|
+|Positive Lookahead| similar to noncapturing group, BUT the text is rewound to where the group started after matching. effectively matching nothing| (?= regexp_choice)|
+|Negative Lookahead|similar to Positive Lookahead, BUT only matches if fails to match|(?! regexp_choice)|
+
+
+> My understanding in layman terms. Positive Lookahead would scan the entire string until it finds the pattern, and then rewind the text to the start. If it finds the text, return true. Negative Lookahead is basically the inverse operation. If it finds the text, it returns false. 
+
+### 4.2.3 regexp Class
+
+A way to specify a set of characters. For example [aeiou] is used to match for vowels.
+
+
+### 4.2.4 Escape 
+
+The `\` is used for escaping special characters in character class. However, there are two different interpretations.
+
+`[\b]` indicates a match for backspace character
+`[\^]` indicates an escape to match for special character `^`
+
+Recall the list of special characters are : `\ / [ ] ( ) { } ? + * | . ^ $`
+
+
+### 4.3 Quantifier
+
+A regex factor may have a quantifier suffix that determines how many times the factor should match. The quantifier is wrapped in curly braces. For example, /www/ matches the same as /w{3}/. 
+
+{3,6} will match either 3,4,5, or 6 times.
+{3,} will match 3 or more times.
+ 
+
+
+<hr>
+
+Phew, that's a lot of components being covered above, so here's a visual summary to tie all of them together. 
+
+![Alt Text](https://thepracticaldev.s3.amazonaws.com/i/3eice2l61g93jy5bp97d.gif)
