@@ -53,6 +53,7 @@ console.log(is_array(data));
 
 
 console.log("For of");
+
 for (const value of data){
     console.log(value);
 }

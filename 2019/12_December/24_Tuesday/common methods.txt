@@ -1,7 +1,7 @@
 78 - 93
 
 Arrays
-
+==============
 array.concat
 array.join
 .pop
@@ -14,26 +14,27 @@ array.join
 .unshift
 
 Function
-
+==============
 function.apply
 
 Number
-
+==============
 number.toExponential
 .toFixed
 .toPrecision
 .toString
 
 Object
-
+==============
 .hasOwnProperty
 
 RegExp
+==============
 .exec
 .test
 
 String
-
+==============
 .char
 .charCodeAt
 .concat
