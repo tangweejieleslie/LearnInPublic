@@ -1,0 +1,56 @@
+Page 1 to 12
+
+- psychopathology of everyday things
+
+frustration caused by everyday objects
+- because we can't figure out how to use
+- plastic that's impossible to open
+- in short, frustration occurs when the user can't figure out what to do. abstracting this into general model: when the user has an intention, but the action taken leads to an unexpected result.
+
+Intention -> Action -> Expectation
+
+---------
+
+Human mind tailored to make sense of the world; i.e. the key is to give the mind a slight clue
+
+Well designed objects are 
+- easy to interpret and understand
+
+Contrast: poor designed objects
+- difficult to use
+- frustrating
+- no clues
+- false clues
+- which ended up traping the user and thwarting the "normal" process of interpretation and design
+
+--------
+
+Frustration of everyday life
+- pushing doors that's meant to be pulled
+- getting trapped in between doors
+
+Key Principles
+- good design naturally provide answers
+
+This is done by
+
+1. Visibility: of clues; so as to signal natural indication of action
+
+example: if the door is fitted with a handle, often you would expect to pull it. if it's fitted with a plate, you would tend to push it.
+
+
+2. Mapping
+- between what user want to do, and what appears to be possible 
+
+
+3. Provide visual feedback to each action: no feedback would lead to user thinking that the thing is not working
+
+
+4. Make key function obvious, visible. just the right things to be visible
+
+---------
+psychology of everyday things
+
+
+
+
