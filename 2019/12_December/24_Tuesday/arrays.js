@@ -7,6 +7,15 @@ console.log(fruits);
 // 1. Creating Arrays
 let firstArray = ["a","b","c"];
 let secondArray = ["d","e","f"];
+let mixedArray = [1,2,"j", {}, function hello(){ console.log("hi");}];
+console.log("mixed", mixedArray);
+mixedArray[4];
+
+let testObj = {
+    hi: function(){console.log("Hello from testObj")}
+}
+
+testObj.hi();
 
 // 2. Access an Array Item
 console.log(firstArray[0]); // Results: "a"
@@ -197,3 +206,9 @@ console.log(intersection(setA, setC));          // => Set [3, 4]
 console.log(symmetricDifference(setA, setC));   // => Set [1, 2, 5, 6]
 console.log(difference(setA, setC));            // => Set [1, 2]
 
+
+newObj.helloWorld = function(){
+    console.log("Hello World from inside an object!");
+}
+
+newObj.helloWorld();
