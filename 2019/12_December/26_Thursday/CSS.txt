@@ -1,0 +1,20 @@
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+
+Flexbox
+- one dimensional layout model
+- i.e. either row or column
+
+Main-axis: defined by flex-direction
+- row, row-reverse, column, column-reverse
+Cross-axis: perpendicular
+
+*axis are the key to aligning and justifying flex items
+
+=========
+flex-container
+- area of document laid out using flexbox
+- items do not stretch on main dimension, but can shrink
+- items stretch to fill size of cross axis
+- flex-basis: default to auto
+- flex-wrap: defaults to nowrap
+
