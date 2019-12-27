@@ -1,0 +1,5 @@
+1. Determine requirements
+2. create some plan based on requirements
+3. first version
+4. feedback and iterate
+5. deployment and maintain
