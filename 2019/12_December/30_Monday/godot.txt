@@ -1,0 +1,20 @@
+Godot 2D Game Basics
+
+- regular 2d nodes, inherits from canvasitem; base for all 2d nodes
+- canvas items arranged in trees, each item inherit parent
+- when parent moved, so will children
+
+
+Point 1: everything stems from canvasItem, visualized as a tree, where relation is interlinked. if one changes, children would be affected.
+
+this should be an intuitive concept...
+
+===
+
+Viewport: property of viewport.canvas_transform, allows paplying custom transform@d, camera2d ????
+
+scrolling effect, i.e. of viewport, best achieved through camera transform propety
+
+
+2D Movement: note that the tutorial is a little outdated
+https://docs.godotengine.org/en/3.1/tutorials/2d/2d_movement.html
