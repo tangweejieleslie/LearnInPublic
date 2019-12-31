@@ -1,0 +1,22 @@
+alt + down: to shift code
+ctrl + b = duplicate
+
+
+TextureRect: useful for background
+- add into texture
+- check expand
+- layout > full rect
+- view > show helpers
+
+
+Label
+
+
+***get_node("Name")
+
+
+$Label.text
+
+*RichText
+can also use richtext label for more complexity, make use of Bb code, access to bold, italics, etc
+
