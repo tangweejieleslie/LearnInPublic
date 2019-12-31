@@ -20,3 +20,5 @@ $Label.text
 *RichText
 can also use richtext label for more complexity, make use of Bb code, access to bold, italics, etc
 
+
+how to display %s in variable?
